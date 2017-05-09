@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnAddA"
+        android:text="Add A"
+
+        android:onClick="process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnAddB"
+        android:text="Add B"
+        android:onClick="process"
+        android:layout_toRightOf="@id/btnAddA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnRemoveA"
+        android:text="Remove A"
+        android:layout_toRightOf="@id/btnAddB"
+        android:onClick="process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnRemoveB"
+        android:text="Remove B"
+
+        android:onClick="process"
+        android:layout_toRightOf="@id/btnRemoveA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnReplaceB"
+        android:text="Replace A to B"
+        android:onClick="process"
+        android:layout_below="@id/btnAddA"
+        android:layout_marginLeft="60sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnReplaceA"
+        android:text="Replace B to A"
+        android:onClick="process"
+        android:layout_toRightOf="@id/btnReplaceB"
+        android:layout_below="@id/btnAddA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnAttach"
+        android:text="Attach A"
+        android:onClick="process"
+        android:layout_below="@id/btnReplaceA"
+        android:layout_marginLeft="100sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnDeTach"
+        android:text="Dettach A"
+        android:onClick="process"
+        android:layout_below="@id/btnReplaceA"
+        android:layout_toRightOf="@id/btnAttach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/group"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnAttach"></LinearLayout>
+</RelativeLayout>
